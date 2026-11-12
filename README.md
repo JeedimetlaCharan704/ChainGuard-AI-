@@ -2,6 +2,9 @@
 ### Deep Learning-Powered Ethereum Transaction Security System
 *A College Deep Learning Project for Fraud, Phishing & Drainer Detection on Ethereum*
 
+🌐 **Live Working Web App:** [https://chainguard-ai-drab.vercel.app](https://chainguard-ai-drab.vercel.app)  
+📦 **GitHub Repository:** [https://github.com/JeedimetlaCharan704/ChainGuard-AI-](https://github.com/JeedimetlaCharan704/ChainGuard-AI-)
+
 ---
 
 ## 📌 1. Project Overview (In Simple Words)

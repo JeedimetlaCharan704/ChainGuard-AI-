@@ -8,13 +8,17 @@ import sys
 import json
 import numpy as np
 
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 model_dir = os.path.join(base_dir, 'model')
 sys.path.append(model_dir)
 
-app = Flask(__name__, template_folder='templates', static_folder='static')
+app = Flask(__name__, template_folder='templates', static_folder='static', static_url_path='/static')
+
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    return send_from_directory(os.path.join(base_dir, 'static'), filename)
 
 # Global model and scaler variables
 MODEL = None
